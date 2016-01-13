@@ -1,4 +1,4 @@
-grocery_list = ["juice", "paper towels", "nutella", "nuggets"]
+grocery_list = [ "nuggets", "paper towels", "salmon", "nutella", "juice"]
 grocery_list << "rice"
 
 def list_output(list)
@@ -18,3 +18,9 @@ else
 end
 
 puts grocery_list[1]
+
+list_output(grocery_list.sort)
+
+grocery_list.delete_at(2)
+
+list_output(grocery_list.sort)
